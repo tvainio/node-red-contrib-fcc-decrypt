@@ -1,0 +1,17 @@
+{
+  "name": "node-red-contrib-fcc-decrypt",
+  "version": "0.1.0",
+  "description": "A Node-RED module to decrypt things..",
+  "author": "Teemu Vainio <tvainiotheprogrammer@gmail.com>",
+  "keywords": [ "node-red" ],
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/tvainio/node-red-contrib-fcc-decrypt"
+  },
+  "node-red": {
+    "nodes": {
+      "fcc-decrypt": "fcc-decrypt/fcc-decrypt.js"
+      }
+  },
+  "license": "MIT"
+}
