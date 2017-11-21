@@ -1,26 +1,36 @@
 <script type="text/javascript">
-    RED.nodes.registerType('fcc-decrypt',{
-        category: 'function',
-        color: '#e2d96e',
-        defaults: {
-            name: {value:""}
-        },
-        inputs:1,
-        outputs:1,
-        icon: "white-globe.png",
-        label: function() {
-            return this.name||"fcc-decrypt";
-        }
-    });
+ RED.nodes.registerType('fcc-decrypt',{
+   category: 'function',
+   color: 'pink',
+   defaults: {
+     name: {value:""},
+     AppSKey: {value:""},
+     DevAddr: {value:""}
+   },
+   inputs:1,
+   outputs:1,
+   icon: "white-globe.png",
+   label: function() {
+     return this.name||"fcc-decrypt";
+   }
+ });
 </script>
 
-<script type="text/x-red" data-template-name="hello-world">
-    <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-        <input type="text" id="node-input-name" placeholder="Name">
-    </div>
+<script type="text/x-red" data-template-name="fcc-decrypt">
+ <div class="form-row">
+ <label for="node-input-AppSKey"><i class="icon-tag"></i> AppSKey</label>
+ <input type="text" id="node-input-AppSKey">
+ </div>
+ <div class="form-row">
+ <label for="node-input-DevAddr"><i class="icon-tag"></i> DevAddr</label>
+ <input type="text" id="node-input-DevAddr">
+ </div>
+ <div class="form-row">
+ <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+ <input type="text" id="node-input-name" placeholder="Name">
+ </div>
 </script>
 
 <script type="text/x-red" data-help-name="fcc-decrypt">
-    <p>Decrypts things.</p>
+ <p>Decrypts LoRa payload data.</p>
 </script>

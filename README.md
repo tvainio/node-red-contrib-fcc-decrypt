@@ -1,3 +1,3 @@
 node-red-contrib-fcc-decrypt
-========================
-Testing...
+============================
+Node-red node to decrypt Lora message payload.
